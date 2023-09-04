@@ -42,6 +42,7 @@ ul {
   background-repeat: no-repeat;
   background-position: 550px;
   border-top: 0.5px solid #8a8a8a;
+  border-bottom: 0.5px solid #8a8a8a;
 }
 
 a {
@@ -166,8 +167,35 @@ body {
   line-height: 23px;
 }
 
-.team {
+.team-title {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 50px;
 }
 
-.team__inner {
+.card__team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card__team-text {
+  font-size: 20px;
+  font-weight: 400px;
+  padding-left: 40px;
+  /* padding: 10px 40px 30px 40px; */
+}
+
+.card__team-item {
+  background-color: #f5f5f5;
+  stroke: #d9d9d9;
+  border-radius: 5px;
+  width: 345px;
+  height: 240px;
+}
+
+.card__team-img {
+  padding: 30px 265px 20px 40px;
 }
