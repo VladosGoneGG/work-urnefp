@@ -204,3 +204,158 @@ body {
 .team__inner {
   margin-left: 90px;
 }
+
+.comanda__img {
+  width: 1110px;
+}
+
+.comanda__logotip {
+  position: relative;
+  width: 120px;
+  top: 85px;
+  left: 55px;
+}
+
+.comanda {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.helping {
+  margin-top: 90px;
+}
+
+.helping__inner {
+  display: flex;
+  justify-content: center;
+
+  padding-left: 90px;
+}
+
+.container__helping {
+  width: 100%;
+  height: 700px;
+  background-image: url(/images/fonemploye.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.helping__contacts {
+  max-width: 1100px;
+  padding-top: 48px;
+  margin: 0;
+}
+
+.helping__contacts-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.helping__contacts-item {
+  width: 386px;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.consultation {
+  display: grid;
+  gap: 20px;
+}
+
+/* .helping__contacts-item form input {
+  grid-column: 1;
+}
+
+.helping__contacts-item form input[name="phone"] {
+  grid-column: 2;
+}
+
+.helping__contacts-item form input[name="email"] {
+  grid-column: 3;
+} */
+
+.employe-img {
+  margin-top: 20px;
+  width: 273px;
+  height: 273px;
+}
+
+.emp-name {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.emp-text {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.emp-phone {
+  margin-bottom: 48px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 30px;
+}
+
+.form-copy {
+  font-size: 11px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
+
+.text-pec {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  position: relative;
+  top: 12px;
+}
+
+.tlp-img {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 4px;
+  right: 4px;
+}
+
+.form-input {
+  width: 306px;
+  height: 63px;
+  padding: 20px 15px;
+  color: #cdcdcd;
+  font-size: 15px;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.form-btn {
+  width: 306px;
+  height: 63px;
+
+  padding: 20px 30px;
+  color: white;
+  background-color: #1e8e31;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 17px;
+  font-family: Inter;
+  font-weight: 700;
+  line-height: 23px;
+}
