@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URNEFP</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="#" class="logo">
+              <img src="/images/logo.svg" alt="" class="logo__img" />
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <p>
+                    Управление по развитию <br />
+                    новых экономических <br />
+                    форм производства
+                  </p>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">Главная</a
+                  ><a href="#" class="menu__list-link">Наша команда</a
+                  ><a href="#" class="menu__list-link">Контакты</a>
+                </li>
+                <li class="menu__list-item" style="gap: 5px">
+                  <p>
+                    Есть вопросы? <br />
+                    <strong>Мы онлайн</strong>
+                  </p>
+
+                  <a href="#" class="menu__list-link">
+                    <img src="/images/tlg.svg" alt="" class="menu__list-tlg" />
+                  </a>
+                  <a href="#" class="menu__list-link">
+                    <img src="/images/wtp.svg" alt="" class="menu__list-wtp" />
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <p class="menu__list-text">
+                    <strong style="font-size: 28px">+7 (495) 639-15-63</strong>
+                    <br />г. Москва, ул. Милашенкова, д.10 <br /><u
+                      >urist.mos.help@yandex.ru</u
+                    >
+                  </p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="border-line-bot"></div>
+      </header>
+      <main class="main">
+        <section class="questions">
+          <div class="questions__inner">
+            <form action="/" method="post">
+              <h1>Форма с вопросами</h1>
+              <p>Какое ваше имя?</p>
+              <input type="text" name="name" placeholder="Введите ваше имя" />
+              <p>Какой ваш возраст?</p>
+              <input
+                type="number"
+                name="age"
+                placeholder="Введите ваш возраст"
+              />
+              <p>Какой ваш любимый цвет?</p>
+              <input
+                type="text"
+                name="color"
+                placeholder="Введите ваш любимый цвет"
+              />
+              <p>Какую сумму вы готовы потратить?</p>
+              <input type="number" name="amount" placeholder="Введите сумму" />
+              <p>Какие галочки вы хотите поставить?</p>
+              <input type="checkbox" name="checkbox1" value="1" />
+              <label for="checkbox1">Я согласен с условиями</label>
+              <input type="checkbox" name="checkbox2" value="2" />
+              <label for="checkbox2">Я хочу получать новости</label>
+              <input type="submit" value="Отправить" />
+            </form>
+            <div class="advantages">
+              <ul class="advantages__list">
+                <li class="advantages__list-item">
+                  <img
+                    src="/images/advv-1.png"
+                    alt="adv-1"
+                    class="advantages-img"
+                  />
+                  <p>Опыт работы 30 лет</p>
+                </li>
+                <li class="advantages__list-item">
+                  <img
+                    src="/images/advv-2.png"
+                    alt="adv-2"
+                    class="advantages-img"
+                  />
+                  <p>Разумная стоимость</p>
+                </li>
+                <li class="advantages__list-item">
+                  <img
+                    src="/images/advv-3.png"
+                    alt="adv-3"
+                    class="advantages-img"
+                  />
+                  <p>Работаем под ключ</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+  <script src="/js/script.js"></script>
+</html>
