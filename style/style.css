@@ -246,10 +246,13 @@ body {
   display: flex;
   justify-content: center;
 
-  padding-left: 65px;
+  padding-left: 80px;
 }
 
 .container__helping {
+  display: flex;
+
+  justify-content: center;
   width: 100%;
   height: 700px;
   background-image: url(/images/fonemploye.jpg);
@@ -267,6 +270,7 @@ body {
 .adimg-right {
   position: absolute;
   z-index: -1;
+  margin-top: 37px;
 }
 .adimg-right {
   right: 1px;
@@ -289,7 +293,21 @@ body {
 }
 
 .helping__contacts-item {
-  width: 360px;
+  width: 333px;
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 10px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.helping__contacts-item-form {
+  width: 386px;
   height: 100%;
   display: grid;
   align-items: center;
@@ -341,7 +359,7 @@ body {
   font-weight: 700;
 }
 
-.form-title {
+.form__helping-title {
   font-size: 20px;
   font-weight: 700;
   padding-top: 30px;
@@ -539,10 +557,168 @@ body {
 .questions__inner {
   display: flex;
   flex-direction: row;
-  gap: 228px;
+}
+
+.advantages {
+  display: flex;
+  width: 282px;
+  height: 280px;
+  margin-top: 294px;
+  margin-left: 180px;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages__list-item {
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.advantages__list-item,
+.advantages__list-item li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.advantages__list-item p {
+  font-size: 17px;
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  line-height: 23px;
 }
 
 .advantages-img {
   width: 40px;
   height: 40px;
+}
+
+.form-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+/*  Тут настройки пользовательского радио точки  */
+
+/* Customize the label (the container) */
+.container__label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container__label input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 0.5px solid #e0e0e0;
+  box-shadow: 1px 1px 5px #e0e0e0;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+/* .container__label:hover input ~ .checkmark {
+  background-color: #ccc;
+} */
+
+/* When the radio button is checked, add a blue background */
+/* .container__label input:checked ~ .checkmark {
+  background-color: #2196f3;
+} */
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container__label input:checked ~ .checkmark:after {
+  display: block;
+  background-image: url(/images/radio-img.svg);
+}
+
+/* Style the indicator (dot/circle) */
+.container__label .checkmark:after {
+  top: 5px;
+  left: 6px;
+  width: 10px;
+  height: 10px;
+  background: no-repeat;
+  /* border-radius: 50%;
+  background: white; */
+}
+
+/* тут будет PROGRESS BAR */
+
+.progress-bar {
+  width: 586px;
+  height: 6px;
+  background-color: #d9d9d9;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.progress-bar .progress {
+  width: 0%;
+  height: 100%;
+  background-color: #1e8e31;
+  border-radius: 5px;
+}
+
+.progress-text {
+  position: relative;
+  bottom: 9px;
+  left: 20px;
+  color: black;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 23px;
+}
+/* тут конец менюшек */
+
+.form__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.questions-form {
+  margin-top: 70px;
 }
