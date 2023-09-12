@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URNEFP</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a href="/index.html" class="logo">
+              <img src="/images/logo.svg" alt="" class="logo__img" />
+            </a>
+            <nav class="menu">
+              <button class="menu__btn-burg">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <p>
+                    Управление по развитию <br />
+                    новых экономических <br />
+                    форм производства
+                  </p>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#" class="menu__list-link">Главная</a
+                  ><a href="#" class="menu__list-link">Наша команда</a
+                  ><a href="#" class="menu__list-link">Контакты</a>
+                </li>
+                <li class="menu__list-item" style="gap: 5px">
+                  <p>
+                    Есть вопросы? <br />
+                    <strong>Мы онлайн</strong>
+                  </p>
+
+                  <a href="#" class="menu__list-link">
+                    <img src="/images/tlg.svg" alt="" class="menu__list-tlg" />
+                  </a>
+                  <a href="#" class="menu__list-link">
+                    <img src="/images/wtp.svg" alt="" class="menu__list-wtp" />
+                  </a>
+                </li>
+                <li class="menu__list-item">
+                  <p class="menu__list-text">
+                    <strong style="font-size: 28px">+7 (495) 639-15-63</strong>
+                    <br />г. Москва, ул. Милашенкова, д.10 <br /><u
+                      >urist.mos.help@yandex.ru</u
+                    >
+                  </p>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="border-line-bot"></div>
+      </header>
+      <main class="main">
+        <div class="container">
+          <section class="questions-form">
+            <div class="questions__inner">
+              <form id="regForm" action="" method="post" class="form__inner">
+                <div class="tab step active">
+                  <span class="progress-text">1/6</span>
+                  <div class="progress-bar" data-value="1">
+                    <div class="progress" style="width: 16%"></div>
+                  </div>
+
+                  <h1 class="form-title">Статус веашего дела:</h1>
+
+                  <label for="myCheckbox" class="container__label">
+                    <input
+                      type="checkbox"
+                      id="myCheckbox"
+                      name="chose"
+                      checked="checked"
+                    />
+                    Только хотите подать в суд
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container__label"
+                    >Уже подали в суд
+                    <input type="checkbox" id="myCheckbox" name="chose" />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container__label"
+                    >На вас только хотят подать в суд
+                    <input type="checkbox" id="myCheckbox" name="chose" />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container__label"
+                    >На вас уже подали в суд
+                    <input type="checkbox" id="myCheckbox" name="chose" />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <div class="btn-np">
+                    <button
+                      type="button"
+                      id="prevBtn"
+                      onclick="nextPrev(-1)"
+                    ></button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                      Далее
+                    </button>
+                    <button type="button" id="skipBtn">Пропустить</button>
+                  </div>
+
+                  <div class="advantages">
+                    <ul class="advantages__list">
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-1.png"
+                          alt="adv-1"
+                          class="advantages-img"
+                        />
+                        <p>Опыт работы 30 лет</p>
+                      </li>
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-3.png"
+                          alt="adv-2"
+                          class="advantages-img"
+                        />
+                        <p>Разумная стоимость</p>
+                      </li>
+                      <li class="advantages__list-item" style="width: 100%">
+                        <img
+                          src="/images/advv-2.png"
+                          alt="adv-3"
+                          class="advantages-img"
+                        />
+                        <p>Работаем под ключ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab step">
+                  <span class="progress-text">2/6</span>
+                  <div class="progress-bar" data-value="1">
+                    <div class="progress" style="width: 32%"></div>
+                  </div>
+                  <h1 class="form-title">
+                    Есть ли закрывающие документы? <br />
+                    Например: ТТН/АКТ/УПД
+                  </h1>
+                  <label class="container__label">
+                    Да<input
+                      type="checkbox"
+                      id="myCheckbox"
+                      name="chose"
+                      checked="checked"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container__label"
+                    >Нет
+                    <input type="checkbox" id="myCheckbox" name="chose" />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <div class="btn-np">
+                    <button
+                      type="button"
+                      id="prevBtn"
+                      onclick="nextPrev(-1)"
+                    ></button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                      Далее
+                    </button>
+                    <button type="button" id="skipBtn">Пропустить</button>
+                  </div>
+
+                  <div class="advantages">
+                    <ul class="advantages__list">
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-1.png"
+                          alt="adv-1"
+                          class="advantages-img"
+                        />
+                        <p>Опыт работы 30 лет</p>
+                      </li>
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-3.png"
+                          alt="adv-2"
+                          class="advantages-img"
+                        />
+                        <p>Разумная стоимость</p>
+                      </li>
+                      <li class="advantages__list-item" style="width: 100%">
+                        <img
+                          src="/images/advv-2.png"
+                          alt="adv-3"
+                          class="advantages-img"
+                        />
+                        <p>Работаем под ключ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab step">
+                  <span class="progress-text">3/6</span>
+                  <div class="progress-bar" data-value="1">
+                    <div class="progress" style="width: 48%"></div>
+                  </div>
+                  <h1 class="form-title">Напишите сумму задолженности</h1>
+                  <label class="container__number-input">
+                    <p><strong> Сумма задолженности</strong></p>
+                    <input type="text" class="monySum" />
+                    <p>*Например 1 000 000р.</p>
+                    <!-- <input type="checkbox" id="myCheckbox" name="chose" checked="checked" /> -->
+                    <!-- <span class="checkmark"></span> -->
+                  </label>
+
+                  <div class="btn-np">
+                    <button
+                      type="button"
+                      id="prevBtn"
+                      onclick="nextPrev(-1)"
+                    ></button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                      Далее
+                    </button>
+                    <button type="button" id="skipBtn">Пропустить</button>
+                  </div>
+                  <div class="advantages">
+                    <ul class="advantages__list">
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-1.png"
+                          alt="adv-1"
+                          class="advantages-img"
+                        />
+                        <p>Опыт работы 30 лет</p>
+                      </li>
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-3.png"
+                          alt="adv-2"
+                          class="advantages-img"
+                        />
+                        <p>Разумная стоимость</p>
+                      </li>
+                      <li class="advantages__list-item" style="width: 100%">
+                        <img
+                          src="/images/advv-2.png"
+                          alt="adv-3"
+                          class="advantages-img"
+                        />
+                        <p>Работаем под ключ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab step">
+                  <span class="progress-text">4/6</span>
+                  <div class="progress-bar" data-value="1">
+                    <div class="progress" style="width: 64%"></div>
+                  </div>
+                  <h1 class="form-title">
+                    Ваша компания зарегистрирована <br />
+                    в Москве или МО?
+                  </h1>
+                  <label class="container__label">
+                    Москва<input
+                      type="checkbox"
+                      id="myCheckbox"
+                      name="chose"
+                      checked="checked"
+                    />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container__label"
+                    >Мо
+                    <input type="checkbox" id="myCheckbox" name="chose" />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <label class="container__label"
+                    >Другое
+                    <input type="checkbox" id="myCheckbox" name="chose" />
+                    <span class="checkmark"></span>
+                  </label>
+
+                  <div class="btn-np">
+                    <button
+                      type="button"
+                      id="prevBtn"
+                      onclick="nextPrev(-1)"
+                    ></button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                      Далее
+                    </button>
+                    <button type="button" id="skipBtn">Пропустить</button>
+                  </div>
+                  <div class="advantages">
+                    <ul class="advantages__list">
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-1.png"
+                          alt="adv-1"
+                          class="advantages-img"
+                        />
+                        <p>Опыт работы 30 лет</p>
+                      </li>
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-3.png"
+                          alt="adv-2"
+                          class="advantages-img"
+                        />
+                        <p>Разумная стоимость</p>
+                      </li>
+                      <li class="advantages__list-item" style="width: 100%">
+                        <img
+                          src="/images/advv-2.png"
+                          alt="adv-3"
+                          class="advantages-img"
+                        />
+                        <p>Работаем под ключ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab step">
+                  <span class="progress-text">5/6</span>
+                  <div class="progress-bar" data-value="1">
+                    <div class="progress" style="width: 80%"></div>
+                  </div>
+                  <h1 class="form-title">
+                    Напишите ИНН вашей <br />
+                    компании и контрагента
+                  </h1>
+                  <label class="container__number-input">
+                    <p><strong>ИНН компании</strong></p>
+                    <input type="text" class="monySum" />
+                  </label>
+                  <label class="container__number-input">
+                    <p><strong>ИНН компании контрагента</strong></p>
+                    <input type="text" class="monySum" />
+                  </label>
+                  <div class="btn-np">
+                    <button
+                      type="button"
+                      id="prevBtn"
+                      onclick="nextPrev(-1)"
+                    ></button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                      Далее
+                    </button>
+                    <button type="button" id="skipBtn">Пропустить</button>
+                  </div>
+                  <div class="advantages">
+                    <ul class="advantages__list">
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-1.png"
+                          alt="adv-1"
+                          class="advantages-img"
+                        />
+                        <p>Опыт работы 30 лет</p>
+                      </li>
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-3.png"
+                          alt="adv-2"
+                          class="advantages-img"
+                        />
+                        <p>Разумная стоимость</p>
+                      </li>
+                      <li class="advantages__list-item" style="width: 100%">
+                        <img
+                          src="/images/advv-2.png"
+                          alt="adv-3"
+                          class="advantages-img"
+                        />
+                        <p>Работаем под ключ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab step">
+                  <span class="progress-text">6/6</span>
+                  <div class="progress-bar" data-value="1">
+                    <div class="progress" style="width: 100%"></div>
+                  </div>
+                  <h1 class="form-title">Укажите комфортный способ связи</h1>
+                  <label class="container__number-input">
+                    <p><strong>Напишите свой номер телефона</strong></p>
+                    <input
+                      type="tel"
+                      placeholder="+7 (___) ___-__-__"
+                      class="monySum"
+                    />
+                  </label>
+                  <div class="social__chex-box">
+                    <input
+                      type="checkbox"
+                      name="mySocial-1"
+                      id="mySocial-1"
+                      class="social-check"
+                    />
+                    <label for="mySocial-1">
+                      Телефонный разговор с адвокатом (+Бесплатная консультация)
+                    </label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="mySocial-2"
+                      id="mySocial-2"
+                      class="social-check"
+                    />
+                    <label for="mySocial-2">WhatsApp</label>
+                  </div>
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="mySocial-3"
+                      id="mySocial-3"
+                      class="social-check"
+                    />
+                    <label for="mySocial-3">Telegram</label>
+                  </div>
+
+                  <div class="btn-np">
+                    <button
+                      type="button"
+                      id="prevBtn"
+                      onclick="nextPrev(-1)"
+                    ></button>
+                    <button type="button" id="nextBtn" onclick="nextPrev(1)">
+                      Готово
+                    </button>
+                  </div>
+                  <div class="advantages">
+                    <ul class="advantages__list">
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-1.png"
+                          alt="adv-1"
+                          class="advantages-img"
+                        />
+                        <p>Опыт работы 30 лет</p>
+                      </li>
+                      <li class="advantages__list-item">
+                        <img
+                          src="/images/advv-3.png"
+                          alt="adv-2"
+                          class="advantages-img"
+                        />
+                        <p>Разумная стоимость</p>
+                      </li>
+                      <li class="advantages__list-item" style="width: 100%">
+                        <img
+                          src="/images/advv-2.png"
+                          alt="adv-3"
+                          class="advantages-img"
+                        />
+                        <p>Работаем под ключ</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tab step">
+                  <div class="last__tab-inner">
+                    <h1 class="form-title">
+                      Ответы приняты в обработку, мы свяжемся <br />
+                      с вами в течение одного рабочего дня
+                    </h1>
+                    <p>
+                      Пока мы анализируем вашу ситуацию, переходите <br />
+                      в наш ТГ канал
+                    </p>
+                    <button class="btn-aref-tg">
+                      <a href="#">Перейти в наш ТГ канал и посмотреть кейсы</a>
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+  </body>
+  <script src="/js/script.js"></script>
+</html>

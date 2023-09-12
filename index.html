@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="wrapper">
@@ -21,6 +25,12 @@
               <img src="/images/logo.svg" alt="" class="logo__img" />
             </a>
             <nav class="menu">
+              <!-- тут будет бургер меню -->
+              <button class="menu__btn-burg">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
               <ul class="menu__list">
                 <li class="menu__list-item">
                   <p>
@@ -62,10 +72,384 @@
       </header>
       <main class="main">
         <section class="analysis">
-          <div class="container__analysis"></div>
+          <div class="border-line-bot"></div>
+          <div class="container__analysis">
+            <div class="questions">
+              <h1 class="questions__title">
+                Получите анализ и процент успешности <br />
+                дела в Арбитражном суде уже <br />
+                сейчас!
+              </h1>
+              <h3 class="questions__answare">
+                Ответьте на <span class="green-word">6 вопросов</span> в квизе и
+                мы подготовим:
+              </h3>
+              <ol class="questions__list">
+                <li class="questions__list-item">
+                  <img src="/images/icon-numb.svg" alt="" class="icon-numb" />
+                  <p class="questions__list-text">
+                    Юридическое заключение,<br />
+                    включающее в себя анализ и оценку<br />
+                    ситуации по Арбитражному делу
+                  </p>
+                </li>
+                <li class="questions__list-item">
+                  <img src="/images/icon-numb.svg" alt="" class="icon-numb" />
+                  <p class="questions__list-text">
+                    Стратегию решения и возможные исходы дела,<br />
+                    включающие в себя услуги медиатора или <br />
+                    адвоката, учитывая ваши потребности
+                  </p>
+                </li>
+                <li class="questions__list-item">
+                  <img src="/images/icon-numb.svg" alt="" class="icon-numb" />
+                  <p class="questions__list-text">
+                    Проведем расчёт стоимости наших услуг <br />
+                    и основных расходов по делу
+                  </p>
+                </li>
+              </ol>
+              <a href="#" class="answer__link">
+                <img src="/images/answer.svg" alt="answer" class="anser__img" />
+              </a>
+            </div>
+          </div>
+          <div class="border-line-top"></div>
+        </section>
+        <section class="team">
+          <div class="container">
+            <div class="team__inner">
+              <h2 class="team-title">Наша команда - это:</h2>
+              <div class="card">
+                <ul class="card__team">
+                  <li class="card__team-item">
+                    <img
+                      src="/images/team-1.svg"
+                      alt="team"
+                      class="card__team-img"
+                    />
+                    <p class="card__team-text">
+                      Отдел по работе <br />
+                      с предпринимателями <br />
+                      одной из первых компаний <br />
+                      на рынке юридических <br />
+                      услуг,<strong>основанной в 1993 г.</strong>
+                    </p>
+                  </li>
+                  <li class="card__team-item">
+                    <img
+                      src="/images/team-2.svg"
+                      alt="team"
+                      class="card__team-img"
+                    />
+                    <p class="card__team-text">
+                      Сотрудники
+                      <strong
+                        >со стажем <br />
+                        работы не менее 12 лет <br />
+                        в области</strong
+                      >
+                      коммерческого <br />
+                      права и арбитражных <br />
+                      процессов
+                    </p>
+                  </li>
+                  <li class="card__team-item">
+                    <img
+                      src="/images/team-3.svg"
+                      alt="team"
+                      class="card__team-img"
+                    />
+                    <p class="card__team-text">
+                      Специалисты, имеющие <br />
+                      <strong
+                        >несколько высших <br />
+                        образований</strong
+                      >
+                      и постоянно <br />
+                      повышающие свою <br />
+                      квалификацию
+                    </p>
+                  </li>
+                  <li class="card__team-item">
+                    <img
+                      src="/images/team-4.svg"
+                      alt="team"
+                      class="card__team-img"
+                    />
+                    <p class="card__team-text">
+                      <strong>Персональное отношение</strong> <br />
+                      к каждому клиенту, как к <br />
+                      своему родственнику
+                    </p>
+                  </li>
+                  <li class="card__team-item">
+                    <img
+                      src="/images/team-5.svg"
+                      alt="team"
+                      class="card__team-img"
+                    />
+                    <p class="card__team-text">
+                      Отзывчивые, ответственные <br />
+                      сотрудники,<strong
+                        >видящие <br />
+                        проблему клиента</strong
+                      >
+                      и его <br />
+                      истинные желания
+                    </p>
+                  </li>
+                  <li class="card__team-item">
+                    <img
+                      src="/images/team-6.svg"
+                      alt="team"
+                      class="card__team-img"
+                    />
+                    <p class="card__team-text">
+                      Выполняем всю
+                      <strong
+                        >работу <br />
+                        под ключ</strong
+                      >
+                      за разумные <br />
+                      деньги
+                    </p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="comanda">
+                <div class="comanda__logotip">
+                  <img
+                    src="/images/logotip.svg"
+                    alt="logotip"
+                    class="comanda-logo"
+                  />
+                </div>
+                <img src="/images/comanda.jpg" alt="img" class="comanda__img" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="helping">
+          <div class="container__helping">
+            <div class="helping__inner">
+              <div class="helping__contacts">
+                <ul class="helping__contacts-list">
+                  <li class="helping__contacts-item">
+                    <img
+                      src="/images/employe-1.jpg"
+                      alt="emp"
+                      class="employe-img"
+                    />
+                    <p class="emp-name">
+                      Шебаров <br />
+                      Алексей Игоревич
+                    </p>
+                    <p class="emp-text">
+                      Генеральный директор,<br />
+                      доктор экономических наук
+                    </p>
+
+                    <p class="emp-phone">
+                      <img
+                        src="/images/telephone.svg"
+                        alt="tlp"
+                        class="tlp-img"
+                      />+7 (495) 639-14-77
+                    </p>
+                  </li>
+                  <li class="helping__contacts-item">
+                    <img
+                      src="/images/employe-2.jpg"
+                      alt="emp"
+                      class="employe-img"
+                    />
+                    <p class="emp-name">
+                      Гаврилова <br />
+                      Евгения Владимировна
+                    </p>
+                    <p class="emp-text">
+                      Заместитель генерального <br />
+                      директора, начальник <br />
+                      юридичсекого отдела
+                    </p>
+
+                    <p class="emp-phone">
+                      <img
+                        src="/images/telephone.svg"
+                        alt="tlp"
+                        class="tlp-img"
+                      />+7 (495) 639-15-63
+                    </p>
+                  </li>
+                  <li class="helping__contacts-item-form">
+                    <p class="form__helping-title">
+                      Получите настоящую профессиональную помощь
+                    </p>
+                    <form action="/feedback" method="post" class="consultation">
+                      <p class="text-pec">Телефон:</p>
+                      <input
+                        class="form-input"
+                        type="tel"
+                        name="phone"
+                        id="phone-input-tel"
+                        placeholder="+7 (___) ___-__-__"
+                      />
+                      <p class="text-pec">E-mail:</p>
+                      <input
+                        class="form-input"
+                        type="email"
+                        name="email"
+                        placeholder="Ваша почта"
+                      />
+                      <p class="text-pec">Комментарий:</p>
+                      <input
+                        class="form-input"
+                        type="text"
+                        name="comment"
+                        placeholder="Комментарий"
+                      />
+                      <button type="submit" class="form-btn">
+                        Записаться на консультацию
+                      </button>
+                    </form>
+                    <p class="form-copy">
+                      Нажимая кнопку я даю своё согласие на обработку моих
+                      <br />
+                      персональных данных
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="adress">
+          <img src="/images/tower-1.svg" alt="tw1" class="adimg-left" />
+          <img src="images/tower-2.svg" alt="tw2" class="adimg-right" />
+          <div class="container__adress">
+            <div class="adress__inner">
+              <div class="adress__contacts">
+                <h3 class="contact-title">Контакты</h3>
+                <ul class="adress__numbers-list">
+                  <p>Телефоны</p>
+                  <li>
+                    <p class="ad-phone">
+                      <img
+                        src="/images/telephone.svg"
+                        alt="tlp"
+                        class="phone-icon"
+                      />+7 (495) 639-15-63
+                    </p>
+                    <p class="ad-phone">
+                      <img
+                        src="/images/telephone.svg"
+                        alt="tlp"
+                        class="phone-icon"
+                      />+7 (925) 838-47-97
+                    </p>
+                  </li>
+                </ul>
+                <div class="adress__info-text">
+                  <p class="adress-text">Адрес:</p>
+                  <p class="adress-text">
+                    <strong>г. Москва, ул. Милашенкова, д. 10, оф. 96</strong>
+                    <br />
+                    вход со стороны улицы, коричневое крыльцо <br />
+                    с вывеской “Юридическая консультация”
+                  </p>
+                </div>
+                <div class="adress__metro">
+                  <ol class="adress__metro-list">
+                    <li class="adress__metro-item">
+                      <p>
+                        <img
+                          src="/images/elip-1.svg"
+                          alt="elip1"
+                          class="metro-elip"
+                        />Фонвизинская
+                      </p>
+                    </li>
+                    <li class="adress__metro-item">
+                      <p>
+                        <img
+                          src="/images/elip-2.svg"
+                          alt="elip2"
+                          class="metro-elip"
+                        />Тимирязевская
+                      </p>
+                    </li>
+                    <li class="adress__metro-item">
+                      <p>
+                        <img
+                          src="/images/elip-3.svg"
+                          alt="elip3"
+                          class="metro-elip"
+                        />Петровско-Разумовская
+                      </p>
+                    </li>
+                    <li class="adress__metro-item">
+                      <p>
+                        <img
+                          src="/images/elip-4.svg"
+                          alt="elip4"
+                          class="metro-elip"
+                        />ул. Милашенкова (станция монорельса)
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+                <div class="adress__links">
+                  <p>
+                    E-mail: <br /><strong style="text-decoration: underline"
+                      >urist.mos.help@yandex.ru</strong
+                    >
+                  </p>
+                  <div class="adress__social">
+                    <ul class="adress__list-social">
+                      <li class="adress__social-item">
+                        <a href="#">
+                          <img src="/images/tlg.svg" alt="#" />
+                          <p class="text-tlg">Свяжитесь с нами в Telegram</p>
+                        </a>
+                        <a href="#">
+                          <img src="/images/wtp.svg" alt="#" />
+                          <p class="text-wtp">Свяжитесь с нами в WhatsApp</p>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="adress__map">
+                <div class="adress__map-road">
+                  <img src="/images/map-1.jpg" alt="map" class="map-img" />
+                  <img src="images/map-2.jpg" alt="map" class="map-img" />
+                  <p>
+                    ЗАО «Управление по развитию новых экономических <br />
+                    форм производства» ИНН: 7715021611
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__text">
+            <p class="footer-copy">URNEFP Все права защищены</p>
+            <a href="#" class="footer-link"
+              ><p>
+                Политика обработки персональных данных компании «URNEFP»
+              </p></a
+            >
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
   <script src="/js/script.js"></script>
